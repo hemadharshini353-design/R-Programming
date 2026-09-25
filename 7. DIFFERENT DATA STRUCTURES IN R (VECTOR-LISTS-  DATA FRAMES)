@@ -1,0 +1,22 @@
+numbers <- c(10, 20, 30, 40, 50)
+names <- c("Abi", "Kalai", "Thamizh")
+
+cat("Vector Example:\n")
+print(numbers)
+print(names)
+
+student_list <- list(name = "Alice", Age = 21, marks = c(90, 85, 60))
+
+cat("List Example:\n")
+print("List of Student Info:")
+print(student_list)
+
+students <- data.frame(
+  Name = c("John", "Alice", "Bob"),
+  Age = c(21, 23, 21),
+  Marks = c(85, 90, 80)
+)
+
+cat("Data Frame Example:\n")
+cat("Student Data Frame:\n")
+print(students)
