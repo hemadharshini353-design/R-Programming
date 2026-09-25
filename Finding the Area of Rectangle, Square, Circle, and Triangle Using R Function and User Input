@@ -1,0 +1,17 @@
+find_area <- function() {
+  repeat {
+    cat("\n1.Rectangle  2.Square  3.Circle  4.Triangle  5.Exit\n")
+    ch <- as.integer(readline("Choose: "))
+    if (ch == 1) {
+      l <- as.numeric(readline("Length: ")); w <- as.numeric(readline("Width: "))
+      cat("Rectangle area =", l * w, "\n")
+    } else if (ch == 2) {
+      s <- as.numeric(readline("Side: ")); cat("Square area =", s^2, "\n")
+    } else if (ch == 3) {
+      r <- as.numeric(readline("Radius: ")); cat("Circle area =", pi * r^2, "\n")
+    } else if (ch == 4) {
+      b <- as.numeric(readline("Base: ")); h <- as.numeric(readline("Height: ")); cat("Triangle area =", .5 * b * h, "\n")
+    } else if (ch == 5) break else cat("Invalid choice\n")
+  }
+}
+find_area()
