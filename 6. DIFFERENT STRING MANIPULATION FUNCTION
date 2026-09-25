@@ -1,0 +1,15 @@
+str <- "Welcome to R Programming 101!"
+cat("Uppercase:", toupper(str), "\n")
+cat("Lowercase:", tolower(str), "\n")
+cat("Length of string:", nchar(str), "\n")
+cat("Substring (12 to 22):", substr(str, 12, 22), "\n")
+cat("Replace 'R' with 'Data':", gsub("R", "Data", str), "\n")
+split_str <- strsplit(str, " ")[[1]]
+cat("Split string:", "\n")
+print(split_str)
+part1 <- "R is"
+part2 <- " powerful!"
+cat("Concatenated string:", paste(part1, part2), "\n")
+trim_str <- " R Programming "
+cat("Trimmed string:", trimws(trim_str), "\n")
+cat("Contains 'R':", grepl("R", str), "\n")
